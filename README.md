@@ -2,13 +2,21 @@
 
 This repository contains the source code of my resume in LaTeX and PDF.
 
-#### How to generate the PDF from LaTeX in macOS
+#### How to generate the PDF from LaTeX
 
-Install the package ```mactex-no-gui```: 
+##### Install the package
+
+###### MacOS
 ```
 $ brew install mactex-no-gui
 ```
-With the ```harnon-cv.cls``` and ```resume.tex``` downloaded, call the command ```pdflatex```:
+###### Debian-based Linuxes
+```
+$ sudo apt install texlive
+```
+
+##### Run pdflatex
+With the ```harnon-cv.cls``` and ```resume.tex``` downloaded, run the command ```pdflatex```:
 ```
 $ pdflatex resume.tex
 ``` 

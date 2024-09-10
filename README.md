@@ -18,5 +18,5 @@ $ sudo apt install texlive
 ##### Run pdflatex
 With the ```harnon-cv.cls``` and ```resume.tex``` downloaded, run the command ```pdflatex```:
 ```
-$ pdflatex resume.tex
+$ pdflatex niltons-resume.tex
 ``` 

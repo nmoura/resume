@@ -1,0 +1,288 @@
+%-------------------------
+% Resume in Latex Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+\usepackage[sfdefault]{FiraSans}
+\usepackage[sfdefault]{roboto}
+\usepackage[sfdefault]{noto-sans}
+\usepackage[default]{sourcesanspro}
+
+% serif
+\usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Nilton Moura} \\ \vspace{1pt}
+    \small +XX XX XXX-XXX-XXX $|$ \href{mailto:deleted@deleted}{\underline{deleted@deleted}} $|$ 
+    \href{https://linkedin.com/in/nmoura}{\underline{linkedin.com/in/nmoura}} $|$
+    \href{https://github.com/nmoura}{\underline{github.com/nmoura}}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Head of Technology}{June 2022 -- Present}
+      {SAF Botafogo}{Rio de Janeiro, Brazil}
+      \resumeItemListStart
+        \resumeItem{Built the infrastructure team and is building the data engineering team.}
+        \resumeItem{Mentors each individual in technical and behavioral matters.}
+        \resumeItem{Led or participated in different projects with third-parties or internally: website dev. and migration, mobile app dev., marketing ETL data, entry of fans into the stadium through facial biometrics.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Senior Systems Management Specialist}{Jul 2021 -- Jun 2022}
+      {Kyndryl}{Rio de Janeiro, Brazil}
+      \resumeItemListStart
+        \resumeItem{Managed RHEL servers running IBM's Wall Street Systems with Ansible, Python and Shellscripts.}
+        \resumeItem{Provided customer-facing support on highly complex issues and participated in on-call rotation.}
+        \resumeItem{Mentored other engineers in Python.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Systems Development Engineer II}{Sep 2018 -- May 2021}
+      {Amazon Web Services}{Dublin, Ireland}
+      \resumeItemListStart
+        \resumeItem{He was the creator, principal developer and maintainer of a network discovery system to map large networks in restricted environments. This Python system allowed the Network Engineers to see, for the first time, the actual state of the Console Network, hence enabling them to design, plan and migrate it from an old layer 2 to a new layer 3 design.}
+        \resumeItem{Participated in the building of an Operating System based on the Linux Buildroot for a new terminal server hardware designed by our team. Developed, in Python, its CLI.}
+        \resumeItem{Developed a tool in Python to rotate the credentials of the Console Network devices, improving its security by avoiding manual errors and reducing the time of the rotation of an entire AWS region from several days to a few hours.}
+        \resumeItem{Developed a tool in Python that automated the steps of the migration of the Console Network design, reducing the time of a single DC fabric migration from 5 to 2 days.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Senior Support Analyst}{Mar 2017 -- Aug 2018}
+      {ANBIMA, Brazil's Central Bank}{Rio de Janeiro, Brazil}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented JBoss and Apache servers on RHEL using Ansible, applying best security practices from CIS (Center for Internet Security) for an application to serve account statement of big financial players on Internet, with all components (databases, web and middleware servers) with mutual authentication and all traffic encrypted.}
+        \resumeItem{Led a project of Dynatrace (Application Performance Management) software implementation.}
+        \resumeItem{Troubleshooted high complexity issues.}
+      \resumeItemListEnd
+
+    \resumeSubSubheading
+     {Support Analyst}{Jul 2014 - Feb 2017}
+     \resumeItemListStart
+       \resumeItem{Wrote a standard document for shell scripts' development of the site disaster recovery automation. Developed standardized functions to be consumed by the shell scripts developed for the automated DR. Later, orchestrated the execution of those scripts using Jenkins Pipeline. This reduced the time for the exchange of roles between sites from ~4h to 16m during DR exercises.}
+       \resumeItem{Designed and implemented a new architecture for 40 JBoss EAP instances; in the old architecture, there were 4 instances with around 10 applications each.}
+       \resumeItem{Implemented GitLab for infrastructure teams and gave Git and GitLab basic lessons to colleagues.}
+       \resumeItem{Supported the development teams in JBoss EAP 6 and CI/CD tools like Jenkins, Sonar and Selenium.}
+     \resumeItemListEnd
+
+    \resumeSubheading
+      {IT Analyst}{Jan 2011 -- Jul 2014}
+      {Petrobras, by Spassu Tecnologia}{Rio de Janeiro, Brazil}
+      \resumeItemListStart
+        \resumeItem{Supported development teams in JBoss EAP 5 and 6, CI process with Jenkins, Sonar, JIRA, Git, Subversion and Mercurial in RHEL and CentOS.}
+        \resumeItem{Designed and implemented the JBoss EAP 6 architecture and Spacewalk for all Brazil E\&P workstations and servers, based on RHEL and CentOS, automatizing Red Hat channels synchronization with Python.}
+        \resumeItem{Implemented a GitLab server for development and infrastructure teams.}
+        \resumeItem{Wrote a baseline for the VMWare virtual servers, for RHEL 6 and CentOS.}
+        \resumeItem{Implemented Jenkins and applications deployment with shell scripts.}
+        \resumeItem{Began the implementation of Puppet Open Source for servers and workstations configuration management.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Senior Support Analyst}{May 2010 -- Dec 2010}
+      {Equinix Brasil}{Rio de Janeiro, Brazil}
+      \resumeItemListStart
+        \resumeItem{Identified root causes of recurrent issues. Troubleshooted high complexity issues, mainly in Linux and its services. Supported analysts on technical matters.}
+      \resumeItemListEnd
+
+    \resumeSubSubheading
+     {Junior Support Analyst}{Aug 2009 - May 2010}
+     \resumeItemListStart
+       \resumeItem{Treated issues quickly enough to try to avoid breaking up SLA as first customer contact, mainly in Linux systems and its services like DNS (BIND), Web (Apache), Database (MySQL), Email (Postfix and Zimbra), Firewall (iptables), Proxy (Squid) and Shellscript.}
+     \resumeItemListEnd
+
+    \resumeSubheading
+      {Operations Analyst}{Dec 2008 -- Jul 2009}
+      {AMT Internet Security \& Datacenter}{Rio de Janeiro, Brazil}
+      \resumeItemListStart
+        \resumeItem{Responsible for design, deploy and server management, mostly in Linux environments for services like DNS (BIND and Windows 2008), Firewall (iptables), Antispam, Monitoring (Nagios), in physical and virtual servers (Citrix-Xen), providing customer-facing last level support.}
+      \resumeItemListEnd
+
+    \resumeSubSubheading
+     {Junior Support Analyst}{Sep 2008 - Nov 2008}
+     \resumeItemListStart
+       \resumeItem{Monitored servers and services, being the customer's first point of contact.}
+     \resumeItemListEnd
+
+    \resumeSubheading
+      {Processian Technician}{Jun 2004 -- Jun 2008}
+      {HSBC Bank Brazil}{Rio de Janeiro, Brazil}
+      \resumeItemListStart
+        \resumeItem{Supported managers and internal clients on information management, control and management of internal flows. Managed Microsoft Access database. Optimized operational routines. Coordinated a team of research and support processes.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Webdesigner}{Mar 2000 -- Apr 2001}
+      {Graça Editorial}{Rio de Janeiro, Brazil}
+      \resumeItemListStart
+        \resumeItem{Developed and maintained the first website of a magazine in pure HTML. Supported colleagues on technical matters.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Gama Filho University}{Rio de Janeiro, RJ}
+      {Tech. Degree in Computer Networks, grade 8.8}{Feb. 2009 -- Feb 2012}
+    \resumeSubheading
+      {Colégio Nacional}{Rio de Janeiro, RJ}
+      {High School Degree specialized in IT}{Feb. 1998 -- Jul 2001}
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+%\section{Projects}
+%    \resumeSubHeadingListStart
+%      \resumeProjectHeading
+%          {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+%          \resumeItemListStart
+%            \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+%            \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+%            \resumeItem{Visualized GitHub data to show collaboration}
+%            \resumeItem{Used Celery and Redis for asynchronous tasks}
+%          \resumeItemListEnd
+%      \resumeProjectHeading
+%          {\textbf{Simple Paintball} $|$ \emph{Spigot API, Java, Maven, TravisCI, Git}}{May 2018 -- May 2020}
+%          \resumeItemListStart
+%            \resumeItem{Developed a Minecraft server plugin to entertain kids during free time for a previous job}
+%            \resumeItem{Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review}
+%            \resumeItem{Implemented continuous delivery using TravisCI to build the plugin upon new a release}
+%            \resumeItem{Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin}
+%          \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Bash, Golang} \\
+     \textbf{Developer Tools}{: Git, Docker, Vagrant, Jenkins, vim} \\
+     \textbf{Databases}{: MySQL} \\
+     \textbf{OS}{: Linux (rpm-based, apt-based)} \\
+     \textbf{Technologies}{: Networking}
+    }}
+ \end{itemize}
+
+%
+%-------------CERTIFICATIONS-------------
+\section{Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+            \textbf{RHCE}{: Red Hat Certified Engineer (on RHEL 6)} $|$ \scriptsize{Certification id: 140-006-107} $|$ \tiny\href{https://rhtapps.redhat.com/verify?certId=140-006-107}{\underline{https://rhtapps.redhat.com/verify?certId=140-006-107}} \\
+            \small\textbf{LPIC-2}{: Linux Professional Institute Certified 2} $|$ \scriptsize{LPI id: LPI000158356, Verification code: mb7jktkvsw} $|$ \tiny\href{https://cs.lpi.org/caf/Xamman/certification}{\underline{https://cs.lpi.org/caf/Xamman/certification}} \\
+            \small\textbf{CompTIA Security+ ce}{: CompTIA Security+ ce} $|$ \scriptsize{Verification code: GQLW8VBFMPREQ4GR} $|$ \tiny\href{http://verify.CompTIA.org}{\underline{http://verify.CompTIA.org}} \\
+            \small\textbf{OCA MySQL 5}{: Oracle Certified Associate, MySQL 5} $|$ \scriptsize{Oracle Testing ID: OC1317290} \\
+            \small\textbf{OCP MySQL 5}{: Oracle Certified Professional, MySQL 5 DBA} $|$ \scriptsize{Oracle Testing ID: OC1317290}
+        }}
+ \end{itemize}
+
+%
+%COMMUNITY CONTRIBUTIONS AND VOLUNTEERING
+\section{Community Contributions and Volunteering}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+            \textbf{Speaker at Slackware Show 2010}{: "\emph{Package Installation and management in Slackware}"} $|$ \tiny{Presented at Instituto Infnet, Rio de Janeiro, Brazil, 2010} \\
+            \small\textbf{Maintainer of Slackbuilds packages}{: Automation for installation of some packages for Slackware Linux} $|$ \tiny{2010-2013} \\
+            \small\textbf{Linux and Information Security Teacher}{: for teenagers living in vulnerable contexts} $|$ \tiny{CEFET, by Petrobras, 2012} \\
+            \small\textbf{Grammar reviewer contributor}{: of the ProGit pt-BR 1st edition} $|$ \tiny{2013} \\
+            \small\textbf{IT Manager and Youth Teacher}{: managed a team of volunteers; Sunday school youth teacher} $|$ \tiny{Igreja Batista Betel de Mesquita, 2012-2017}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}

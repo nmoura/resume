@@ -106,106 +106,93 @@
 \begin{document}
 
 \begin{center}
-    \textbf{\Huge \scshape Nilton Moura} \\ \vspace{1pt}
-    \small +XX XX XXX-XXX-XXX $|$ \href{mailto:xyz@xyz.com}{\underline{xyz@xyz.com}} $|$ 
-    \href{https://linkedin.com/in/nmoura}{\underline{linkedin.com/in/nmoura}} $|$
-    \href{https://github.com/nmoura}{\underline{github.com/nmoura}}
+    \textbf{\Huge \scshape Nilton Silva de Moura} \\ \vspace{1pt}
+    \small Portuguese citizen (EU) $|$ Brazilian citizen $|$ +XX XX XXX-XXX-XXX $|$ \href{mailto:hidden@hidden.com}{\underline{hidden@hidden.com}} $|$ 
+    \href{https://linkedin.com/in/nmoura}{\underline{linkedin.com/in/nmoura}}
 \end{center}
 
 \section{Summary}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-        \textbf{}{Senior Engineer with 17+ years of experience mostly in tech industry in Brazil and abroad. Specializes in Linux systems, networking and programming. At AWS in Ireland, designed and developed a network discovery system that mapped highly restricted networks, helping eliminate an L2 architectural bottleneck affecting all AWS datacenters by enabling a transition to a scalable L3 design. Also developed the CLI for a new terminal-server hardware designed within the team and contributed to its Linux-based operating system using Buildroot.}
+        \textbf{}{Senior systems and infrastructure engineer with 17+ years of experience designing and operating complex Linux- and network-based platforms in highly regulated, mission-critical, and hyperscale environments. Strong background in Linux systems, networking, and automation, with a track record of delivering bespoke infrastructure solutions where commercial tools or standard patterns were insufficient.\par\smallskip
+          At Amazon Web Services (Ireland), designed and built a custom, large-scale network discovery system under extreme constraints—no SNMP, no SSH, console-only access—providing the first visibility into a legacy Layer-2 console network that had become a structural bottleneck to AWS datacenter growth. The system dynamically discovered and mapped hundreds of thousands of heterogeneous network devices across AWS datacenters using multithreaded Python, vendor-specific console parsing, and multiple neighbor-discovery protocols, directly enabling the migration to scalable Layer-3 architectures. Also contributed to hardware enablement by working on a Linux Buildroot–based embedded operating system and developing user-space CLI tooling for custom terminal-server hardware.\par\smallskip
+          Recognized for calm ownership under pressure and for earning trust through execution, I have built and led teams when needed but am intentionally returning to senior individual contributor roles focused on solving complex infrastructure and reliability problems at scale.}
       }}
  \end{itemize}
-  
+
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
 
+    \medskip
+
     \resumeSubheading
-      {Head of Technology}{Jun 2022 -- Nov 2025}
+      {Head of Technology (Hands-On Infrastructure \& Systems Lead)}{Jun 2022 -- Nov 2025}
       {SAF Botafogo}{Rio de Janeiro, Brazil}
       \resumeItemListStart
-        \resumeItem{Built the department from the ground up, growing it from 0 to 8 people and delivering infrastructure, systems, and data projects supporting 300+ users.}
-        \resumeItem{Leads and sponsors initiatives such as datacenter retrofit, Wi-Fi for 30k fans, data lake/warehouse developed by the team, which provided geospatial insights that enabled marketing to choose the location of a new physical store within minutes.}
-        \resumeItem{Mentors the members of the team in technical, behavioral and career matters in weekly 1:1 meetings.}
-        \resumeItem{Partners with all departments to align technology initiatives with business strategy.}
+        \resumeItem{Joined the newly formed private company as the first technology hire, establishing the technology function from zero and initially owning hands-on infrastructure and systems operations while recruiting and structuring the team.}
+        \resumeItem{Built and led an 8-person team delivering reliable infrastructure, systems, and data platforms supporting 300+ users across soccer operations and stadium environments, including datacenter modernization and large-scale connectivity.}
+        \resumeItem{Transitioned operational ownership to the team and partnered with leadership to deliver high-impact, execution-focused initiatives under constant availability and public-facing pressure.}
       \resumeItemListEnd
-      
+
+    \medskip
+
     \resumeSubheading
-      {Senior Systems Management Specialist}{Jul 2021 -- Jun 2022}
+      {Senior Linux Engineer}{Jul 2021 -- Jun 2022}
       {Kyndryl}{Rio de Janeiro, Brazil}
       \resumeItemListStart
-        \resumeItem{Managed RHEL servers running IBM's Wall Street Systems with Ansible, Python and Shellscripts.}
-        \resumeItem{Provided customer-facing support on highly complex issues and participated in on-call rotation.}
-        \resumeItem{Mentored other engineers in Python.}
+        \resumeItem{Operated and maintained mission-critical RHEL environments supporting IBM Wall Street Systems, where downtime was unacceptable outside approved maintenance windows. Automated system management and patching using Ansible, Python, and shell scripting, served as a customer-facing escalation point for complex incidents, participated in on-call rotations, and mentored engineers on Python and operational best practices.}
     \resumeItemListEnd
+
+    \medskip
 
     \resumeSubheading
       {Systems Development Engineer II}{Sep 2018 -- May 2021}
       {Amazon Web Services}{Dublin, Ireland}
       \resumeItemListStart
-        \resumeItem{Created, developed and maintained a network discovery system that mapped large networks in restricted environments. The system gave Network Engineers visibility into the Console Network (RS-232) for the first time, enabling migration from a legacy Layer 2 to a scalable Layer 3 design.}
-        \resumeItem{Participated in building a Linux Buildroot-based operating system for a new terminal-server hardware, also developing its CLI (Command Line Interface).}
+        \resumeItem{Designed, built, and operated a bespoke network discovery system for AWS datacenters, delivering the first visibility into a console-only (RS-232), legacy Layer-2 network that had become a scalability bottleneck for datacenter growth. Engineered a production-only, multithreaded discovery platform—without SNMP or SSH—capable of identifying hundreds of thousands of heterogeneous devices by dynamically parsing vendor-specific console outputs and leveraging multiple neighbor-discovery protocols (e.g., CDP, LLDP, ISDP), enabling accurate topology mapping and unblocking migration to scalable Layer-3 architectures.}
         \resumeItem{Developed automation tools in Python to rotate credentials and orchestrate network-migration tasks, reducing manual errors and cutting region-wide credential rotation from days to hours, and individual DC fabric migrations from 5 to 2 days.}
+        \resumeItem{Participated in building a Linux Buildroot-based operating system for a new terminal-server hardware, also developing its CLI (Command Line Interface).}
       \resumeItemListEnd
 
+    \medskip
+
     \resumeSubheading
-      {Senior Support Analyst}{Mar 2017 -- Aug 2018}
+      {Senior Linux/Platform Engineer}{Jul 2014 -- Aug 2018}
       {ANBIMA, Brazil's Central Bank}{Rio de Janeiro, Brazil}
       \resumeItemListStart
-        \resumeItem{Designed and implemented JBoss and Apache servers on RHEL using Ansible, applying best security practices from CIS (Center for Internet Security) for an application to serve account statement of big financial players on Internet, with all components (databases, web and middleware servers) with mutual authentication and all traffic encrypted.}
-        \resumeItem{Led a project of Dynatrace (Application Performance Management) software implementation.}
-        \resumeItem{Troubleshooted high complexity issues.}
-      \resumeItemListEnd
-
-    \resumeSubSubheading
-     {Support Analyst}{Jul 2014 - Feb 2017}
-     \resumeItemListStart
-       \resumeItem{Wrote a standard document for shell scripts' development of the site disaster recovery automation. Developed standardized functions to be consumed by the shell scripts developed for the automated DR. Later, orchestrated the execution of those scripts using Jenkins Pipeline. This reduced the time for the exchange of roles between sites from ~4h to 16m during DR exercises.}
-       \resumeItem{Designed and implemented a new architecture for 40 JBoss EAP instances; in the old architecture, there were 4 instances with around 10 applications each.}
-       \resumeItem{Implemented GitLab for infrastructure teams and gave Git and GitLab basic lessons to colleagues.}
-       \resumeItem{Supported the development teams in JBoss EAP 6 and CI/CD tools like Jenkins, Sonar and Selenium.}
+        \resumeItem{Designed and delivered the organization’s first Internet-facing application platform, deploying hardened JBoss and Apache servers on RHEL with Ansible and CIS benchmarks, enforcing mutual authentication and end-to-end encryption across all tiers, and integrating F5 Web Application Firewall to meet Central Bank–level security requirements.}
+       \resumeItem{Reduced site role-exchange time during disaster recovery exercises from ~4 hours to 16 minutes by defining and implementing the DR automation strategy. Authored standardized shell scripting guidelines and reusable function libraries, automated DNS (BIND) role switching, and orchestrated end-to-end execution through Jenkins Pipelines.}
+       \resumeItem{Significantly reduced application downtime by redesigning the architecture of 40 JBoss EAP instances, eliminating cascading failures where a single application outage previously impacted an average of 10 additional instances.}
+       \resumeItem{Introduced GitLab for infrastructure teams and led Git/GitLab onboarding and training, while supporting development teams with JBoss EAP 6 and CI/CD pipelines using Jenkins, Sonar, and Selenium.}
      \resumeItemListEnd
 
+    \medskip
+
     \resumeSubheading
-      {IT Analyst}{Jan 2011 -- Jul 2014}
-      {Petrobras, by Spassu Tecnologia}{Rio de Janeiro, Brazil}
+      {Senior Linux Engineer}{Jan 2011 -- Jul 2014}
+      {Petrobras, by Spassu}{Rio de Janeiro, Brazil}
       \resumeItemListStart
-        \resumeItem{Supported development teams in JBoss EAP 5 and 6, CI process with Jenkins, Sonar, JIRA, Git, Subversion and Mercurial in RHEL and CentOS.}
-        \resumeItem{Designed and implemented the JBoss EAP 6 architecture and Spacewalk for all Brazil E\&P workstations and servers, based on RHEL and CentOS, automatizing Red Hat channels synchronization with Python.}
-        \resumeItem{Implemented a GitLab server for development and infrastructure teams.}
-        \resumeItem{Wrote a baseline for the VMWare virtual servers, for RHEL 6 and CentOS.}
-        \resumeItem{Implemented Jenkins and applications deployment with shell scripts.}
-        \resumeItem{Began the implementation of Puppet Open Source for servers and workstations configuration management.}
+        \resumeItem{Established foundational DevOps and Linux platform standards for enterprise environments, enabling reliable application delivery and scalable infrastructure through CI/CD, system automation, and configuration management across RHEL/CentOS. Drove architecture, deployment, and lifecycle practices supporting development teams and large workstation/server fleets.}
       \resumeItemListEnd
 
+    \medskip
+
     \resumeSubheading
-      {Senior Support Analyst}{May 2010 -- Dec 2010}
-      {Equinix Brasil}{Rio de Janeiro, Brazil}
+      {Senior Linux Support Engineer}{Aug 2009 -- Dec 2010}
+      {Equinix Datacenter}{Rio de Janeiro, Brazil}
       \resumeItemListStart
-        \resumeItem{Identified root causes of recurrent issues. Troubleshooted high complexity issues, mainly in Linux and its services. Supported analysts on technical matters.}
+        \resumeItem{Led root-cause analysis and resolution of complex Linux incidents, acting as escalation point and technical mentor while restoring service reliability.}
       \resumeItemListEnd
 
-    \resumeSubSubheading
-     {Junior Support Analyst}{Aug 2009 - May 2010}
-     \resumeItemListStart
-       \resumeItem{Treated issues quickly enough to try to avoid breaking up SLA as first customer contact, mainly in Linux systems and its services like DNS (BIND), Web (Apache), Database (MySQL), Email (Postfix and Zimbra), Firewall (iptables), Proxy (Squid) and Shellscript.}
-     \resumeItemListEnd
+    \medskip
 
     \resumeSubheading
-      {Operations Analyst}{Dec 2008 -- Jul 2009}
+      {Linux Engineer}{Sep 2008 -- Jul 2009}
       {AMT Internet Security \& Datacenter}{Rio de Janeiro, Brazil}
       \resumeItemListStart
-        \resumeItem{Responsible for design, deploy and server management, mostly in Linux environments for services like DNS (BIND and Windows 2008), Firewall (iptables), Antispam, Monitoring (Nagios), in physical and virtual servers (Citrix-Xen), providing customer-facing last level support.}
+        \resumeItem{Designed, deployed, and operated Linux-based infrastructure across physical and virtual environments, delivering last-level, customer-facing support for critical services including DNS, firewalls, antispam, and monitoring.}
       \resumeItemListEnd
-
-    \resumeSubSubheading
-     {Junior Support Analyst}{Sep 2008 - Nov 2008}
-     \resumeItemListStart
-       \resumeItem{Monitored servers and services, being the customer's first point of contact.}
-     \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
@@ -242,18 +229,19 @@
 %    \resumeSubHeadingListEnd
 
 %-----------PROGRAMMING SKILLS-----------
-\section{Main Technical Skills}
+\section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Core Skills}{: Linux, Python, Bash, Networking } \\
-     \textbf{Tools}{: Git, Jenkins, Ansible, Docker, Vagrant } \\
+     \textbf{Tools}{: Ansible, Git, Jenkins, Docker } \\
      \textbf{Databases}{: MySQL, PostgreSQL (learning)} \\
-     \textbf{Currently Exploring}{: C/Clang, Go/Golang, Emacs Lisp } \\
+     \textbf{Currently Exploring}{: C/Clang, Go/Golang } \\
      \textbf{Certifications}{: RHCE, LPIC-2, CompTIA Security+ ce, OCP MySQL 5}
     }}
  \end{itemize}
-%
- %-------------CERTIFICATIONS-------------
+ %
+
+%-------------CERTIFICATIONS-------------
 \section{Certifications}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
@@ -274,7 +262,6 @@
             \small\textbf{Maintainer of Slackbuilds packages}{: Automation for installation of some packages for Slackware Linux} $|$ \tiny{2010-2013} \\
             \small\textbf{Linux and Information Security Teacher}{: for teenagers living in vulnerable contexts} $|$ \tiny{CEFET, by Petrobras, 2012} \\
             \small\textbf{Grammar reviewer contributor}{: of the ProGit pt-BR 1st edition} $|$ \tiny{2013} \\
-            \small\textbf{IT Manager and Youth Teacher}{: managed a team of volunteers; Sunday school youth teacher} $|$ \tiny{Igreja Batista Betel de Mesquita, 2012-2017}
     }}
  \end{itemize}
 

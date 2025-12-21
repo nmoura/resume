@@ -131,8 +131,11 @@
       {SAF Botafogo}{Rio de Janeiro, Brazil}
       \resumeItemListStart
         \resumeItem{Joined the newly formed private company as the first technology hire, establishing the technology function from zero and initially owning hands-on infrastructure and systems operations while recruiting and structuring the team.}
-        \resumeItem{Built and led an 8-person team delivering reliable infrastructure, systems, and data platforms supporting 300+ users across soccer operations and stadium environments, including datacenter modernization and large-scale connectivity.}
-        \resumeItem{Transitioned operational ownership to the team and partnered with leadership to deliver high-impact, execution-focused initiatives under constant availability and public-facing pressure.}
+        \resumeItem{Delivered a centralized data lake and warehouse supporting multiple analytics, including geospatial insights that enabled marketing to decide the location of a new physical store within minutes and enabled CRM implementation.}
+        \resumeItem{Delivered a same-day custom GUI application integrating retail point-of-sale with the club’s fan membership platform, unblocking the on-time launch of the first physical store and enabling correct discount application by membership tier.}
+        \resumeItem{Redesigned the match-day video analysis workflow by implementing a low-latency RTSP streaming pipeline using GStreamer, reducing end-to-end delay from ~10s to ~5s while improving analyst productivity and preserving privacy.}
+        \resumeItem{Owned technical coordination for a multi-vendor fan mobile platform, integrating ticketing, membership, and e-commerce systems to deliver in-app ticket purchases, loyalty features, and AR experiences, and piloted facial-recognition stadium access before halting deployment due to hardware constraints incompatible with production conditions.}
+        \resumeItem{Led the technical due diligence of a stadium-scale Wi-Fi program targeting simultaneous connectivity for 30,000 fans, benchmarking international venues, evaluating vendors and hardware ecosystems, and co-designing AP placement to support high-density social media traffic; project was fully specified before being paused due to board-level reprioritization.}
       \resumeItemListEnd
 
     \medskip
@@ -152,7 +155,7 @@
       \resumeItemListStart
         \resumeItem{Designed, built, and operated a bespoke network discovery system for all AWS datacenters, delivering the first visibility into a console-only (RS-232), legacy Layer-2 network that had become a scalability bottleneck for datacenter growth. Engineered a production-only, multithreaded discovery platform — without SNMP or SSH — capable of identifying hundreds of thousands of heterogeneous devices by dynamically parsing vendor-specific console outputs and leveraging multiple neighbor-discovery protocols (e.g., CDP, LLDP, ISDP), enabling accurate topology mapping and unblocking migration to scalable Layer-3 architectures.}
         \resumeItem{Developed automation tools in Python to rotate credentials and orchestrate network-migration tasks, reducing manual errors and cutting region-wide credential rotation from days to hours, and individual DC fabric migrations from 5 to 2 days.}
-        \resumeItem{Participated in building a Linux Buildroot-based operating system for a new terminal-server hardware, also developing its CLI (Command Line Interface).}
+        \resumeItem{Participated in building a Linux Buildroot-based operating system for a new terminal-server hardware, and developed its CLI.}
       \resumeItemListEnd
 
     \medskip
@@ -196,17 +199,6 @@
 
   \resumeSubHeadingListEnd
 
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Gama Filho University}{Rio de Janeiro, RJ}
-      {Tech. Degree in Computer Networks; GPA: 8.8/10, equivalent to 3.5/4.0}{Feb. 2009 -- Feb 2012}
-    \resumeSubheading
-      {Colégio Nacional}{Rio de Janeiro, RJ}
-      {High School Degree specialized in IT}{Feb. 1998 -- Jul 2001}
-  \resumeSubHeadingListEnd
-
 %-----------PROJECTS-----------
 %\section{Projects}
 %    \resumeSubHeadingListStart
@@ -235,8 +227,7 @@
      \textbf{Core Skills}{: Linux, Python, Bash, Networking } \\
      \textbf{Tools}{: Ansible, Git, Jenkins, Docker } \\
      \textbf{Databases}{: MySQL, PostgreSQL (learning)} \\
-     \textbf{Currently Exploring}{: C/Clang, Go/Golang } \\
-     \textbf{Certifications}{: RHCE, LPIC-2, CompTIA Security+ ce, OCP MySQL 5}
+     \textbf{Currently Exploring}{: C/Clang, Go/Golang }
     }}
  \end{itemize}
  %
@@ -253,15 +244,22 @@
         }}
  \end{itemize}
 
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Gama Filho University}{Rio de Janeiro, RJ}
+      {Tech. Degree in Computer Networks; GPA: 8.8/10, equivalent to 3.5/4.0}{Feb. 2009 -- Feb 2012}
+  \resumeSubHeadingListEnd
+
 %
 %COMMUNITY INVOLVEMENT & TEACHING
 \section{Community Involvement \& Teaching}
  \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-            \textbf{Speaker at Slackware Show 2010}{: "\emph{Package Installation and management in Slackware}"} $|$ \tiny{Presented at Instituto Infnet, Rio de Janeiro, Brazil, 2010} \\
-            \small\textbf{Maintainer of Slackbuilds packages}{: Automation for installation of some packages for Slackware Linux} $|$ \tiny{2010-2013} \\
-            \small\textbf{Linux and Information Security Teacher}{: for teenagers living in vulnerable contexts} $|$ \tiny{CEFET, by Petrobras, 2012} \\
-            \small\textbf{Grammar reviewer contributor}{: of the ProGit pt-BR 1st edition} $|$ \tiny{2013} \\
+   \small{\item{
+       \small\textbf{Maintainer of Slackbuilds packages}{: Automation for installation of some packages for Slackware Linux} $|$ \tiny{2010-2013} \\
+       \small\textbf{Speaker at Slackware Show 2010}{: "\emph{Package Installation and management in Slackware}"} $|$ \tiny{Presented at Instituto Infnet, Rio de Janeiro, Brazil, 2010} \\
+       \small\textbf{Linux and Information Security Teacher}{: for teenagers living in vulnerable contexts} $|$ \tiny{CEFET, by Petrobras, 2012} \\
     }}
  \end{itemize}
 

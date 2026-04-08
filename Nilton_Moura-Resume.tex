@@ -18,21 +18,15 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{microtype}
+\usepackage{textcase}
 \DisableLigatures[f]{encoding = *, family = *}
 \input{glyphtounicode}
 
-
 %----------FONT OPTIONS----------
-% sans-serif
-\usepackage[sfdefault]{FiraSans}
-\usepackage[sfdefault]{roboto}
-\usepackage[sfdefault]{noto-sans}
-\usepackage[default]{sourcesanspro}
-
-% serif
 \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
+\usepackage[default]{sourcesanspro} % Sets Source Sans Pro as the sans-serif option
+% Set Cormorant Garamond as the default body font (Serif)
+\renewcommand{\familydefault}{\rmdefault}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -55,8 +49,11 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-4pt}\sffamily\fontseries{sb}\selectfont\raggedright\large
+}{}{0em}{\MakeTextUppercase}[\color{black}\titlerule \vspace{-5pt}]
+%\titleformat{\section}{
+%  \vspace{-4pt}\scshape\raggedright\large
+%}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -81,6 +78,15 @@
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingThree}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \footnotesize #5 \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -116,7 +122,7 @@
     \small{\item{
         \textbf{}{Senior systems and infrastructure engineer with 17+ years of experience designing and operating complex Linux and network-based platforms in highly regulated, mission-critical, and hyperscale environments. Strong background in automation, with a track record of delivering bespoke solutions where commercial tools or standard patterns were insufficient.\par\smallskip
           At Amazon Web Services (Ireland), designed and built a custom, large-scale network discovery system under extreme constraints, providing the first visibility into a legacy Layer-2 console network that had become a structural bottleneck to AWS datacenter growth. The system discovered and mapped hundreds of thousands of heterogeneous network devices across AWS datacenters, enabling the migration to scalable Layer-3 architectures. Also contributed to hardware enablement by working on a Linux Buildroot–based embedded operating system and developing user-space CLI tooling for custom terminal-server hardware.\par\smallskip
-        Recognized for strong ownership and attention to detail, has taken on leadership responsibilities when needed and am now intentionally transitioning back to individual contributor roles focused on RISC-V and Linux/Unix systems development.}
+          Recognized for strong ownership and attention to detail, has taken on leadership responsibilities when needed and is now intentionally transitioning back to individual contributor roles focused on RISC-V and Linux/Unix systems, while pursuing an M.Sc. in Systems Engineering and Computer Science at COPPE/UFRJ with a focus on Computer Architecture and Operating Systems.}
       }}
  \end{itemize}
 
@@ -247,6 +253,10 @@
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
+    \resumeSubheadingThree
+      {Federal University of Rio de Janeiro}{Rio de Janeiro, RJ}
+      {Master's Degree, Systems and Computing Engineering at COPPE/UFRJ}{Mar. 2026 -- Dec 2027}
+      {Research Area: Computer Architecture and Operating Systems}
     \resumeSubheading
       {Gama Filho University}{Rio de Janeiro, RJ}
       {Tech. Degree in Computer Networks; GPA: 8.8/10, equivalent to 3.5/4.0}{Feb. 2009 -- Feb 2012}
